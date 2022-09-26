@@ -107,7 +107,7 @@ export function MenuInner() {
         </MenuInnerWithSub>
         <MenuItem
           icon='/media/icons/duotune/general/gen051.svg'
-          to='/apps/user-management/users'
+          to='/user-management/users'
           title='User management'
         />
       </MenuInnerWithSub>

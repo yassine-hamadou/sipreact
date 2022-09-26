@@ -21,7 +21,7 @@ const UsersListToolbar = () => {
       {/* end::Export */}
 
       {/* begin::Add user */}
-      <Link to='/crafted/pages/wizards/horizontal' className='btn btn-primary'>
+      <Link to='/user-management/new-user' className='btn btn-primary'>
         <KTSVG path='/media/icons/duotune/arrows/arr075.svg' className='svg-icon-2' />
         Add User
       </Link>

@@ -132,7 +132,7 @@ const Horizontal: FC = () => {
                   <div>
                     {isFormSubmitted ? (
                       <Link
-                        to='/apps/user-management/users'
+                        to='/user-management/users'
                         className='btn btn-lg btn-primary me-3'
                       >
                         <span className='indicator-label'>Go to Users Page</span>

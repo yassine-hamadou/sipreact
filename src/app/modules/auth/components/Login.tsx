@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {useState} from 'react'
+import React, {useState} from 'react'
 import * as Yup from 'yup'
 import clsx from 'clsx'
 import {Link} from 'react-router-dom'
@@ -62,30 +62,23 @@ export function Login() {
       noValidate
       id='kt_login_signin_form'
     >
-      {/* begin::Heading */}
-      <div className='text-center mb-10'>
-        <h1 className='text-dark mb-3'>Sign In to Metronic</h1>
-        <div className='text-gray-400 fw-bold fs-4'>
-          New Here?{' '}
-          <Link to='/auth/registration' className='link-primary fw-bolder'>
-            Create an Account
-          </Link>
-        </div>
-      </div>
-      {/* begin::Heading */}
+      {/*/!* begin::Heading *!/*/}
+      {/*<div className='text-center mb-10'>*/}
+      {/*  <h1 className='text-dark mb-3'>Sign In to Metronic</h1>*/}
+      {/*  <div className='text-gray-400 fw-bold fs-4'>*/}
+      {/*    New Here?{' '}*/}
+      {/*    <Link to='/auth/registration' className='link-primary fw-bolder'>*/}
+      {/*      Create an Account*/}
+      {/*    </Link>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
+      {/*/!* begin::Heading *!/*/}
 
-      {formik.status ? (
+      {formik.status ?
         <div className='mb-lg-15 alert alert-danger'>
           <div className='alert-text font-weight-bold'>{formik.status}</div>
         </div>
-      ) : (
-        <div className='mb-10 bg-light-info p-8 rounded'>
-          <div className='text-info'>
-            Use account <strong>admin@demo.com</strong> and password <strong>demo</strong> to
-            continue.
-          </div>
-        </div>
-      )}
+        : null}
 
       {/* begin::Form group */}
       <div className='fv-row mb-10'>
@@ -152,6 +145,31 @@ export function Login() {
           </div>
         )}
       </div>
+      <div className='fv-row mb-10'>
+        <div className='mb-10'>
+          <label className='form-label fw-bold'>Company:</label>
+
+          <div>
+            <select
+              className='form-select form-select-solid'
+              data-kt-select2='true'
+              data-placeholder='Select option'
+              data-allow-clear='true'
+              defaultValue={'1'}
+            >
+              <option></option>
+              <option value='1'>1</option>
+              <option value='2'>2</option>
+              <option value='3'>3</option>
+              <option value='4'>4</option>
+            </select>
+          </div>
+        </div>
+
+
+
+      </div>
+
       {/* end::Form group */}
 
       {/* begin::Action */}
@@ -172,43 +190,43 @@ export function Login() {
         </button>
 
         {/* begin::Separator */}
-        <div className='text-center text-muted text-uppercase fw-bolder mb-5'>or</div>
+        {/*<div className='text-center text-muted text-uppercase fw-bolder mb-5'>or</div>*/}
         {/* end::Separator */}
 
-        {/* begin::Google link */}
-        <a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100 mb-5'>
-          <img
-            alt='Logo'
-            src={toAbsoluteUrl('/media/svg/brand-logos/google-icon.svg')}
-            className='h-20px me-3'
-          />
-          Continue with Google
-        </a>
-        {/* end::Google link */}
+        {/*/!* begin::Google link *!/*/}
+        {/*<a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100 mb-5'>*/}
+        {/*  <img*/}
+        {/*    alt='Logo'*/}
+        {/*    src={toAbsoluteUrl('/media/svg/brand-logos/google-icon.svg')}*/}
+        {/*    className='h-20px me-3'*/}
+        {/*  />*/}
+        {/*  Continue with Google*/}
+        {/*</a>*/}
+        {/*/!* end::Google link *!/*/}
 
-        {/* begin::Google link */}
-        <a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100 mb-5'>
-          <img
-            alt='Logo'
-            src={toAbsoluteUrl('/media/svg/brand-logos/facebook-4.svg')}
-            className='h-20px me-3'
-          />
-          Continue with Facebook
-        </a>
-        {/* end::Google link */}
+        {/*/!* begin::Google link *!/*/}
+        {/*<a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100 mb-5'>*/}
+        {/*  <img*/}
+        {/*    alt='Logo'*/}
+        {/*    src={toAbsoluteUrl('/media/svg/brand-logos/facebook-4.svg')}*/}
+        {/*    className='h-20px me-3'*/}
+        {/*  />*/}
+        {/*  Continue with Facebook*/}
+        {/*</a>*/}
+        {/*/!* end::Google link *!/*/}
 
-        {/* begin::Google link */}
-        <a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100'>
-          <img
-            alt='Logo'
-            src={toAbsoluteUrl('/media/svg/brand-logos/apple-black.svg')}
-            className='h-20px me-3'
-          />
-          Continue with Apple
-        </a>
-        {/* end::Google link */}
+        {/*/!* begin::Google link *!/*/}
+        {/*<a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100'>*/}
+        {/*  <img*/}
+        {/*    alt='Logo'*/}
+        {/*    src={toAbsoluteUrl('/media/svg/brand-logos/apple-black.svg')}*/}
+        {/*    className='h-20px me-3'*/}
+        {/*  />*/}
+        {/*  Continue with Apple*/}
+        {/*</a>*/}
+        {/*/!* end::Google link *!/*/}
       </div>
-      {/* end::Action */}
+       {/*end::Action */}
     </form>
   )
 }

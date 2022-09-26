@@ -1,11 +1,12 @@
 import {Route, Routes, Outlet, Navigate} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../../_metronic/layout/core'
 import {UsersListWrapper} from './users-list/UsersList'
+import { Horizontal } from "../../wizards/components/Horizontal";
 
 const usersBreadcrumbs: Array<PageLink> = [
   {
     title: 'User Management',
-    path: '/apps/user-management/users',
+    path: '/user-management/users',
     isSeparator: false,
     isActive: false,
   },
@@ -30,8 +31,26 @@ const UsersPage = () => {
             </>
           }
         />
+        <Route
+          path='new-user'
+          element={
+            <>
+              <Horizontal />
+            </>
+          }
+        />
+
+      {/*  page not found*/}
+        <Route
+          path='*'
+          element={
+            <>
+              <Navigate to='/error/404' />
+            </>
+          }
+        />
       </Route>
-      <Route index element={<Navigate to='/apps/user-management/users' />} />
+      <Route index element={<Navigate to='/user-management/users' />} />
     </Routes>
   )
 }

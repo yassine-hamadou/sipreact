@@ -8,7 +8,7 @@ export function AsideMenuMain() {
   return (
     <>
       <AsideMenuItem
-        to='/apps/user-management/users'
+        to='/user-management/users'
         icon='/media/icons/duotune/general/gen051.svg'
         title='User management'
         fontIcon='bi-layers'
