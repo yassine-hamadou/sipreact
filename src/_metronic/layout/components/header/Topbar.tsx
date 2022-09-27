@@ -1,21 +1,21 @@
 import clsx from 'clsx'
 import React, {FC} from 'react'
-import {KTSVG, toAbsoluteUrl} from '../../../helpers'
+import { toAbsoluteUrl } from '../../../helpers'
 import {
-  HeaderNotificationsMenu,
+  // HeaderNotificationsMenu,
   HeaderUserMenu,
-  QuickLinks,
+  // QuickLinks,
   Search,
-  ThemeModeSwitcher,
+  // ThemeModeSwitcher,
 } from '../../../partials'
-import {useLayout} from '../../core'
+// import {useLayout} from '../../core'
 
 const toolbarButtonMarginClass = 'ms-1 ms-lg-3',
-  toolbarButtonHeightClass = 'w-30px h-30px w-md-40px h-md-40px',
+  // toolbarButtonHeightClass = 'w-30px h-30px w-md-40px h-md-40px',
   toolbarUserAvatarHeightClass = 'symbol-30px symbol-md-40px'
 
 const Topbar: FC = () => {
-  const {config} = useLayout()
+  // const {config} = useLayout()
 
   return (
     <div className='d-flex align-items-stretch flex-shrink-0'>
@@ -24,13 +24,13 @@ const Topbar: FC = () => {
         <Search />
       </div>
 
-      {/* begin::Theme mode */}
-      <div className={clsx('d-flex align-items-center', toolbarButtonMarginClass)}>
-        <ThemeModeSwitcher
-          toggleBtnClass={clsx('btn-active-light-primary btn-custom', toolbarButtonHeightClass)}
-        />
-      </div>
-      {/* end::Theme mode */}
+      {/*/!* begin::Theme mode *!/*/}
+      {/*<div className={clsx('d-flex align-items-center', toolbarButtonMarginClass)}>*/}
+      {/*  <ThemeModeSwitcher*/}
+      {/*    toggleBtnClass={clsx('btn-active-light-primary btn-custom', toolbarButtonHeightClass)}*/}
+      {/*  />*/}
+      {/*</div>*/}
+      {/*/!* end::Theme mode *!/*/}
 
       {/* begin::User */}
       <div
