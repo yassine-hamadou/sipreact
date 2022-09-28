@@ -17,6 +17,7 @@ const loginSchema = Yup.object().shape({
     .min(3, 'Minimum 3 symbols')
     .max(50, 'Maximum 50 symbols')
     .required('Password is required'),
+  option: Yup.string().required('Company is required'),
 })
 
 const initialValues = {
@@ -154,6 +155,7 @@ export function Login() {
               data-placeholder='Select option'
               data-allow-clear='true'
               defaultValue={''}
+              {...formik.getFieldProps('option')}
             >
               <option></option>
               <option value='damangDivision'>Engineers and Planners - DAMANG DIVISION</option>
