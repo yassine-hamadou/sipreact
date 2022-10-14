@@ -124,9 +124,9 @@ const Step1: FC = () => {
                   {/* begin::Label */}
                   <label className='form-check-label' htmlFor='role_option_0'>
                     <div className='fw-bolder text-gray-800'>Administrator</div>
-                    <div className='text-gray-600'>
-                      Best for business owners and company administrators
-                    </div>
+                    {/*<div className='text-gray-600'>*/}
+                    {/*  Best for business owners and company administrators*/}
+                    {/*</div>*/}
                   </label>
                   {/* end::Label */}
                 </div>
@@ -154,10 +154,10 @@ const Step1: FC = () => {
                   {/* begin::Label */}
                   <label className='form-check-label' htmlFor='role_option_2'>
                     <div className='fw-bolder text-gray-800'>Manager</div>
-                    <div className='text-gray-600'>
-                      People who need full access to analytics data, but don't need to update
-                      business settings
-                    </div>
+                    {/*<div className='text-gray-600'>*/}
+                    {/*  People who need full access to analytics data, but don't need to update*/}
+                    {/*  business settings*/}
+                    {/*</div>*/}
                   </label>
                   {/* end::Label */}
                 </div>
@@ -184,9 +184,9 @@ const Step1: FC = () => {
                   {/* begin::Label */}
                   <label className='form-check-label' htmlFor='role_option_3'>
                     <div className='fw-bolder text-gray-800'>Supervisor</div>
-                    <div className='text-gray-600'>
-                      Best for employees who regularly refund payments and respond to disputes
-                    </div>
+                    {/*<div className='text-gray-600'>*/}
+                    {/*  Best for employees who regularly refund payments and respond to disputes*/}
+                    {/*</div>*/}
                   </label>
                   {/* end::Label */}
                 </div>
@@ -213,10 +213,10 @@ const Step1: FC = () => {
                   {/* begin::Label */}
                   <label className='form-check-label' htmlFor='role_option_4'>
                     <div className='fw-bolder text-gray-800'>Data Entry</div>
-                    <div className='text-gray-600'>
-                      People who need to collect ad input content data, but don't need to make any
-                      updates
-                    </div>
+                    {/*<div className='text-gray-600'>*/}
+                    {/*  People who need to collect ad input content data, but don't need to make any*/}
+                    {/*  updates*/}
+                    {/*</div>*/}
                   </label>
                   {/* end::Label */}
                 </div>
